@@ -1,0 +1,16 @@
+version: "3.3"
+services:
+  website:
+    build: ./Frontend/website
+    ports:
+      - 3000:3000
+    expose:
+      - "3000"
+
+  re-admin:
+    build: ./Frontend/re-admin
+    ports:
+      - 3001:3001
+    expose:
+      - "3001"
+
